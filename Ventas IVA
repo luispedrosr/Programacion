@@ -1,0 +1,13 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
+
+int main()
+{float A,B,R;
+printf("Ingrese ventas en Bs: \n");
+scanf("%f",&A);
+R=(0.13 * A);
+printf("Resultado incluido IVA es: %f",R);
+	getch();
+}
