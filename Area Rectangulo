@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
+
+int main()
+{int A,B,R;
+printf("Calular area del rectangulo \n");
+printf("Ingrese lado A: ");
+scanf("%d",&A);
+printf("Ingrese lado B: ");
+scanf("%d",&B);
+R=A*B;
+printf("Resultado es: %d",R);
+	getch();
+}
