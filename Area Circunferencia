@@ -1,0 +1,14 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
+
+int main()
+{float A,B,R;
+printf("Calular area de la circunferencia \n");
+printf("Ingrese Radio: ");
+scanf("%f",&A);
+R=(3.141516 * (A*A));
+printf("Resultado es: %f",R);
+	getch();
+}
