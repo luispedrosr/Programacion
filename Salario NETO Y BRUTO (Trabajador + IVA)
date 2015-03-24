@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{int N,I,PH,HT,B;
+float R,RT;
+printf("Ingrese Nro. de Trabajadores: ");
+scanf("%d",&N);
+for(I=1;I<=N;I++)
+ {printf("Trabajador N.-%d\n",I);
+printf("Ingrese Precio Hora: ");
+scanf("%d",&PH);
+printf("Ingrese Cantidad de horas trabajadas: ");
+scanf("%d",&HT);
+printf("------------------------------------------------\n");
+B=PH*HT;
+printf("Sueldo Bruto: %d\n",B);
+R=B*0.13;
+printf("Descuento de IVA es: %0.2f\n",R);
+RT=B-R;
+printf("Sueldo Neto: %0.2f\n",RT);
+printf("*************************************************\n");
+}
+getch();
+}
