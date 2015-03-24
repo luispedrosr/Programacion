@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+void main()
+{int N,I;
+float P1,P2,P3,TP,EF,R;
+printf("Ingrese numero de alumnos: ");
+scanf("%d",&N);
+for(I=1;I<=N;I++)
+ {printf("Estudiante N.-%d\n",I);
+printf("Ingrese Nota 1er Parcial: ");
+scanf("%f",&P1);
+printf("Ingrese Nota 2do Parcial: ");
+scanf("%f",&P2);
+printf("Ingrese Nota 3er Parcial: ");
+scanf("%f",&P3);
+printf("Ingrese Nota Trabajos practicos: ");
+scanf("%f",&TP);
+printf("Ingrese Nota Examen Final: ");
+scanf("%f",&EF);
+R=(((P1+P2+P3)/3)*0.4)+(TP*0.2)+(EF*0.4);
+printf("Nota Final es: %0.2f \n",R);
+ }
+getch();
+}
