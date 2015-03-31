@@ -1,0 +1,53 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+
+void main()
+{
+int Op,L,R1,R,P1,P2,Tp,Ef,S;
+float R2,R3,R4;
+	do{
+printf("1) Area Cuadrado \n");
+printf("2) Area Circunferencia \n");
+printf("3) Nota Final \n");
+printf("4) Salario + IVA \n");
+printf("\n 0) Salir");
+printf("\n Eliga una opcion: ");
+scanf("%d",&Op);
+  switch (Op) 
+  { case 1: printf("Ingrese Lado:  ");
+            scanf("%d",&L);
+			R1=L*L;
+			printf("Area Cuadrado es: %d",R1);
+			break;
+
+  case 2:   printf("Ingrese Radio:  ");
+            scanf("%d",&R);
+			R2=3.14*(R*R);
+			printf("Area Circunferencia es: %0.2f",R2);
+			break;
+
+  case 3:   printf("Ingrese Primer Parcial:  ");
+            scanf("%d",&P1);
+			printf("Ingrese Segundo Parcial:  ");
+            scanf("%d",&P2);
+			printf("Ingrese Trabajo Practico:  ");
+            scanf("%d",&Tp);
+			printf("Ingrese Examen Final:  ");
+            scanf("%d",&Ef);
+			R3=(P1*0.2)+(P2*0.2)+(Tp*0.2)+(Ef*0.4);
+			printf("Nota Final es: %0.2f ",R3);
+			break;
+
+  case 4:   printf("Ingrese Salario:  ");
+            scanf("%d",&S); 
+			R4=S*0.13;
+			printf("Salario IVA= %0.2f ",R4);
+			break;
+   }
+
+}while(Op >=5 || Op <= -1);	
+getch();
+}
